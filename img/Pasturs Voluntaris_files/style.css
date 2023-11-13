@@ -1,0 +1,137 @@
+/* styles.css */
+
+
+
+/* Stilregel für den Header */
+
+header {
+    background-color: rgb(115, 95, 95); /* Hintergrundfarbe des Headers */
+    color: beige; /* Textfarbe im Header */
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: beige; /* Farbe der Navigationslinks */
+}
+
+#content {
+    padding: 20px;
+}
+
+/* Stilregel für das Logo */
+#logo {
+    width: 200px; /* Hier die gewünschte Breite einstellen */
+    height: auto; /* Die Höhe automatisch anpassen, um das Seitenverhältnis zu erhalten */
+    padding: 10px;
+}
+
+/* Stilregeln für das Navigationsmenü */
+#main-nav {
+    text-align: right; /* Text rechts ausrichten */
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#main-nav li {
+    display: inline; /* Menüpunkte nebeneinander darstellen */
+    margin-left: 10px; /* Abstand zwischen den Menüpunkten hinzufügen */
+}
+
+#main-nav a {
+    text-decoration: none; /* Unterstreichung der Links entfernen */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stilregel für den Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: beige; /* Hauptfarbe */
+    color: rgb(115, 95, 95); /* Sekundärfarbe */
+}
+
+/* Stilregel für die Einsätze */
+
+.veranstaltung {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Stilregel für den Footer */
+
+footer {
+    background-color: rgb(115, 95, 95); /* Hintergrundfarbe des Footers */
+    color: beige; /* Textfarbe im Footer */
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    text-align: center; /* Den Text im Footer zentrieren */
+}
+
+/* Stilregel für die Links im Footer */
+footer a {
+    color: inherit; /* Die Farbe der Links erbt die Farbe des umgebenden Textes */
+    text-decoration: none; /* Unterstreichung der Links entfernen (optional) */
+}
+
+/* Zusätzliche Stilregeln für den Footer */
+.footer-section {
+    margin: 20px; /* Abstand zwischen den Footer-Abschnitten hinzufügen */
+}
+
+/* Stilregel, um Listenpunkte zu entfernen */
+.footer-section ul {
+    list-style: none;
+}
+
+/* Stilregel, um Listenpunkte zu entfernen */
+.footer-section ul {
+    list-style: none;
+    padding: 0; /* Zusätzlichen Abstand entfernen */
+}
+
+/* Stilregel, um die Links im Service-Abschnitt zu zentrieren */
+.footer-section ul li {
+    text-align: center;
+}
