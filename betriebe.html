@@ -1,29 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Unterseite - Titel Ihrer Unterseite</title>
+    <title>Betriebe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Überschrift oder Logo der Unterseite</h1>
-        <nav>
+        <a href="index.html" id="logo-link"> <!-- Link zur Hauptseite -->
+        <img src="img/Logo_Pasturs-Voluntaris_farbe-positiv.svg" alt="Logo Pasturs Voluntaris" id="logo"> <!-- Hier füge das Logo ein -->
+        <nav id="main-nav"> <!-- ID für das Navigationsmenü hinzugefügt -->
             <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="überuns.html">Über uns</a></li>
-                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="betriebe.html">Betriebe</a></li>
+                <li><a href="kontaktformular.html">Helfer werden</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Willkommen auf unserer Unterseite</h2>
-        <p>Dies ist der Hauptinhalt Ihrer Unterseite.</p>
-    </main>
+    <section id="betriebe-content">
+        <h1>Betriebe</h1>
+        <p> </p>
+        
+        <!-- Abschnitt für die Unterstützung -->
+        <section id="unterstuetzung">
+            <h2>Unterstützung erhalten</h2>
+            <p>Das Projekt Pasturs Voluntaris geht nach dem erfolgreichen Pilotjahr weiter!
+                Neu unterstützen wir ab 2022 Betriebe im ganzen Kanton Graubünden und im Kanton Glarus.
+                Sie können über das Online-Formular oder per Telefon mit uns Kontakt aufnehmen.</p>
+            <!-- Hier könnten weitere Details und Schritte folgen -->
+        </section>
+
+        <!-- Abschnitt für die Anforderungen -->
+        <section id="anforderungen">
+            <h2>Voraussetzungen für unsere Unterstützung</h2>
+            <ul>
+                <li>Sie führen einen Heim- oder Alpbetrieb mit Schafen und / oder Ziegen</li>
+                <li>Ihr Betrieb liegt in Graubünden oder Glarus</li>
+                <li>Sie setzen mindestens eine anerkannte Herdenschutzmassnahme um</li>
+                <li>Sie haben einen Mehraufwand durch die Umsetzung von Herdenschutzmassnahmen</li>
+                <li>Sie bieten angemessene Arbeiten für freiwillige Helferinnen und Helfer</li>
+            </ul>
+            
+        </section>
+
+        <!-- Abschnitt für die angebotenen Leistungen -->
+        <section id="leistungen">
+            <h2>Ihre Leistungen</h2>
+            <p>Sie entrichten eine Einschreibegebühr und können dann ganzjährig nach Bedarf die Hilfe der Freiwilligen anfordern.
+                Einschreibegebühr:
+            <ul><li>Alpbetriebe: CHF 100.-</li>
+                <li>Heimbetriebe: CHF 50.-</li>
+            </ul>     
+
+                Während der Einsätze sind Sie für die Verpflegung der Freiwilligen zuständig. Bei mehrtägigen Einsätzen stellen Sie eine Übernachtungsmöglichkeit für die Freiwilligen zur Verfügung. Einige Freiwillige sind auch bereit, im Zelt zu übernachten. </p>
+        </section>
+
+        <!-- Formular für den Einsatz -->
+        <section id="content">
+            <h2>Einsatz erfassen</h2>
+        <form id="einsatz-form" action="submit_form.php" method="post" onsubmit="return dankeNachricht()">
+            
+          
+            <label for="einsatzArt">Art des Einsatzes</label>
+            <input type="text" id="einsatzArt" name="einsatzArt" placeholder="Bsp. 'Nachtpferch erstellen'" required>
+          
+            <label for="telefonnummer">Telefonnummer *</label>
+            <input type="tel" id="telefonnummer" name="telefonnummer" required>
+          
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="adresse">Wohnadresse *</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Bsp. Musterstrasse 1, 7000 Chur" required>
+          
+            <label for="betriebsart">Betriebsart *</label>
+            <div>
+              <input type="radio" id="alpbetrieb" name="betriebsart" value="alpbetrieb">
+              <label for="alpbetrieb">Alpbetrieb</label>
+          
+              <input type="radio" id="heimbetrieb" name="betriebsart" value="heimbetrieb">
+              <label for="heimbetrieb">Heimbetrieb</label>
+            </div>
+          
+            <label for="taetigkeit">Arbeitstätigkeit</label>
+            <textarea id="taetigkeit" name="taetigkeit"></textarea>
+          
+            <label for="ausruestung">Benötigte Ausrüstung</label>
+            <input type="text" id="ausruestung" name="ausruestung" placeholder="Bsp. Schlafsack">
+          
+            <label for="einsatzdatum">Einsatzdatum</label>
+            <input type="date" id="einsatzdatum" name="einsatzdatum" required>
+          
+            <label for="schwierigkeitsstufe">Schwierigkeitsstufe</label>
+            <select id="schwierigkeitsstufe" name="schwierigkeitsstufe">
+              <option value="leicht">Leicht</option>
+              <option value="mittel">Mittel</option>
+              <option value="schwer">Schwer</option>
+              <!-- Weitere Optionen hier einfügen -->
+            </select>
+          
+            <label for="bemerkungen">Bemerkungen</label>
+            <textarea id="bemerkungen" name="bemerkungen"></textarea>
+          
+            <input type="submit" value="Absenden">
+          </form>
+        </section>
+          
+          <script>
+          function dankeNachricht() {
+            alert("Vielen Dank! Ihre Anfrage wird schnellst möglich bearbeitet.");
+            return false; // oder false, wenn das Formular nicht gesendet werden soll
+          }
+          </script>
+          
+    </section>
 
     <footer>
-        <p>&copy; 2023 Ihr Unternehmen. Alle Rechte vorbehalten.</p>
+        <!-- Footer wie auf der Hauptseite -->
     </footer>
 </body>
 </html>
+
