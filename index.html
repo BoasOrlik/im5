@@ -115,6 +115,26 @@
             <button class="anmelden-button" onclick="window.location.href='betriebe.html'">Anmelden als Landwirt:in</button>
             <p>Nach Ihrer Anmeldung kontaktieren wir Sie telefonisch für eine erste Vorabklärung. Wenn Sie für eine Unterstützung in Frage kommen, besuchen wir Sie auf Ihrem Betrieb und besprechen die Einsatzmöglichkeiten.</p>
 
+            <!-- Gallerie*/ -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/schaf.jpg" alt="Bild 1" onclick="openLightbox(0)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/schaf2.jpg" alt="Bild 2" onclick="openLightbox(1)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/hund.jpg" alt="Bild 3" onclick="openLightbox(2)">
+                </div>
+            </div>
+            
+            <div class="lightbox" id="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img src="img/schaf.jpg" alt="Bild 1" id="lightbox-image">
+                <div class="caption">Bild 1</div>
+            </div>
+            
+            
        
         </section>
 
