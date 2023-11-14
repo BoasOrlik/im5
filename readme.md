@@ -6,14 +6,19 @@ Die Website Pasturs Voluntaris ist eine Plattform, die den Bauern helfen soll, s
 Inhalt und Ziel:
 
 Bedeutung: "Freiwillige Hirten" (Rätoromanisch)
+
 Zweck: Ausbildung von Freiwilligen zur Unterstützung von Kleinviehhaltern bei Herdenschutzmassnahmen.
+
 Hintergrund: Anpassung an Herausforderungen durch die Präsenz von Wölfen im Schweizer Alpenraum.
+
 Regionale Fokussierung: Kantone Graubünden und Glarus.
+
 Zielgruppe: Landwirtschaftliche Betriebe im Wolfsterritorium.
 
 Bedeutung:
 
 Beitrag zum Schutz von Nutztieren vor Wolfsangriffen.
+
 Unterstützung der Berglandwirtschaft in betroffenen Regionen​
 
 ## Quellen:
