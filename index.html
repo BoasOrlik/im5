@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Pasturs Voluntaris</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Innerhalb Ihres HTML-Head-Tags -->
+    <script>
+    // JavaScript, um das Menü umzuschalten
+    function toggleMenu() {
+        var menu = document.getElementById('main-nav').getElementsByTagName('ul')[0];
+        if (menu.className === 'active') {
+            menu.className = '';
+        } else {
+            menu.className = 'active';
+        }
+    }
+    </script>
 </head>
 
 
 <body>
     <header>
-        <a href="index.html" id="logo-link"> <!-- Link zur Hauptseite -->
-        <img src="img/Logo_Pasturs-Voluntaris_farbe-positiv.svg" alt="Logo Pasturs Voluntaris" id="logo"> <!-- Hier füge das Logo ein -->
-        <nav id="main-nav"> <!-- ID für das Navigationsmenü hinzugefügt -->
+        <a href="index.html" id="logo-link">
+            <img src="img/Logo_Pasturs-Voluntaris_farbe-positiv.svg" alt="Logo Pasturs Voluntaris" id="logo">
+        </a>
+        <!-- Hamburger-Icon für kleine Bildschirme -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="betriebe.html">Betriebe</a></li>
@@ -20,13 +42,14 @@
         </nav>
     </header>
     
+    
 
 
     <section id="content">
         <!-- Inhalt der Startseite -->
         <h1>GEMEINSAM FÜR DEN HERDENSCHUTZ</h1>
         <p>Pasturs Voluntaris – Aus dem Rätoromanischen übersetzt bedeutet dies "Freiwillige Hirten". Hirten und Hirtinnen beschützen ihre Herden – und genau das tun wir in diesem Projekt. Wir bilden freiwillige Helfer und Helferinnen dazu aus, Kleinviehhaltende bei der Umsetzung von Herdenschutzmassnahmen zu unterstützen.</p>
-        <img src="img/schaf.jpg" alt="Schaf" width="100%"/>
+        <img src="img/schaf.jpg" alt="Schaf" class="responsive-image"/>
 
         <h1>Aktuelle Einsätze</h1>
         <p>Du möchtest Landwirtinnen und Landwirte beim Herdenschutz unterstützen?
@@ -57,14 +80,42 @@
             <div class="veranstaltung">
                 <img src="img/einsatz3.jpeg" alt="Bild 3" width="80%">
                 <ul>
-                    <h2>Wolf würgen</h2>
+                    <h2>Pferch bauen</h2>
                     <p>20. Januar 2024</p>
                     <p>4 Stunden</p>
                     <p>Obersays</p>
                     <button class="anmelden-button" onclick="window.location.href='kontaktformular.html'">Jetzt anmelden</button>
                 </ul>
             </div>
-   
+
+            <h1>Die Idee</h1>
+            <p>Im ganzen schweizerischen Alpenraum ist mit Wölfen zu rechnen. Ihre Präsenz stellt die Berglandwirtschaft vor neue Herausforderungen. Kleinviehhaltung ohne konsequente Herdenschutzmassnahmen ist im Streifgebiet der Wölfe nicht mehr möglich, ohne ein hohes Risiko einzugehen, dass Nutztiere gerissen werden. 
+                Um die Betriebe bei der Bewältigung dieses Mehraufwands zu unterstützen, wollen wir mitanpacken. Wir helfen auf Betrieben in den Kantonen Graubünden und Glarus.</p>
+        
+            <img src="img/helferinnen.jpeg" alt="Helferinnen" class="responsive-image"/>
+
+
+            <h1>Unterstützung leisten</h1>
+            <p>Freiwillige unterstützen Kleinviehhalter und Kleinviehhalterinnen bei ihrer täglichen Arbeit im Herdenschutz. 
+                Dadurch wird der Herdenschutz gestärkt, das Nebeneinander von Berglandwirtschaft und dem Wolf verbessert und das gegenseitige Verständnis zwischen der Stadt- und Bergbevölkerung vergrössert.</p>
+            <button class="anmelden-button" onclick="window.location.href='kontaktformular.html'">Freiwillige:r Hirt:in werden</button>
+            
+            <h1>Unterstützung erhlaten</h1>
+            <p>Brauchen Sie Hilfe beim Herdenschutz? Wir nehmen Ihre Anfrage gerne entgegen.</p>
+            <h2>Unterstützte Massnahmen</h2>
+            <ul>
+                <li>Zäune auf- und abbauen</li>
+                <li>Nachtpferche erstellen</li>
+                <li>Gras unter Zäunen mähen</li>
+                <li>Flatterbänder anbringen</li>
+                <li>Unterstützung beim Weidewechsel</li>
+                <li>Besucherinformation auf den Alpen</li>
+                <li>Überwachung der Herde</li>
+            </ul>
+            <button class="anmelden-button" onclick="window.location.href='betriebe.html'">Anmelden als Landwirt:in</button>
+            <p>Nach Ihrer Anmeldung kontaktieren wir Sie telefonisch für eine erste Vorabklärung. Wenn Sie für eine Unterstützung in Frage kommen, besuchen wir Sie auf Ihrem Betrieb und besprechen die Einsatzmöglichkeiten.</p>
+
+       
         </section>
 
 
