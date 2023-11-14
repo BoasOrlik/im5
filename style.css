@@ -173,6 +173,19 @@ body {
     background-color: floralwhite;
 }
 
+/* Responsive Stilregel für kleine Bildschirme */
+@media (max-width: 768px) {
+    .veranstaltung {
+        display: block; /* Stapelt die Boxen vertikal */
+        width: 100%; /* Jede Box nimmt die volle Breite ein */
+        margin: 10px 0; /* Fügt oben und unten einen Abstand hinzu */
+    }
+}
+
+
+
+
+
 /* Stilregel für die Buttons */
 
 .anmelden-button {
