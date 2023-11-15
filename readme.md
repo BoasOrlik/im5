@@ -22,6 +22,6 @@ Beitrag zum Schutz von Nutztieren vor Wolfsangriffen.
 Unterstützung der Berglandwirtschaft in betroffenen Regionen​
 
 ## Quellen:
-https://www.w3schools.com/, https://chat.openai.com/, 
+https://www.w3schools.com/, https://chat.openai.com/, https://validator.w3.org/ 
 
 Ich habe hauptsächlich mit diesen beiden Hilfsmitteln gearbeitet. Vor allem Chat GPT war eine grosse Unterstützung, wobei ich sehr achtsam sein musste, was ich wirklich brauchen kann und was nicht. Blind Code kopieren konnte ich auf jeden Fall nicht, ich musste alles sorgfältig filtern und überprüfen.

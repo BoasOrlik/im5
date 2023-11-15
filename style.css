@@ -1,6 +1,8 @@
 /* styles.css */
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* Stilregel für den Header */
 
@@ -271,6 +273,10 @@ form input[type="submit"]:hover {
 
 .gallery-item {
     cursor: pointer;
+}
+
+.gallery-item img{
+    width: 100%;
 }
 
 /* CSS für die Lightbox */

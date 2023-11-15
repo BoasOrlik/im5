@@ -15,9 +15,11 @@ function greet() {
 
 // JavaScript für die Bildergalerie und Lightbox
 const images = [
-    'img/schaf.jpg',
-    'img/schaf2.jpg',
-    'img/hund.jpg'
+    'img/bts1.jpeg',
+    'img/bts2.jpeg',
+    'img/bts3.jpeg',
+    'img/bts4.jpeg',
+    'img/bts5.jpeg'
 ];
 
 let currentImageIndex = 0;
